@@ -1,0 +1,15 @@
+{
+  "ACTOR.TypeCharacter": "Character",
+  "ITEM.TypeItem": "Item",
+  "TENCANDLES.Virtue": "Virtue",
+  "TENCANDLES.Vice": "Vice",
+  "TENCANDLES.Moment": "Moment",
+  "TENCANDLES.MomentLabel": "I will find hope...",
+  "TENCANDLES.Brink": "Brink",
+  "TENCANDLES.BrinkLabel": "I have seen you...",
+  "TENCANDLES.Burned": "Burned",
+  "TENCANDLES.Look": "Look",
+  "TENCANDLES.Concept": "Concept",
+  "TENCANDLES.Inventory": "Inventory",
+  "TENCANDLES.Note": "Note"
+}

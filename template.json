@@ -1,0 +1,33 @@
+{
+  "Actor": {
+    "types": ["character"],
+    "character": {
+      "virtue": {
+        "value": "",
+        "burn": false
+      },
+      "vice": {
+        "value": "",
+        "burn": false
+      },
+      "moment": {
+        "value": "",
+        "burn": false
+      },
+      "brink": {
+        "value": "",
+        "burn": false
+      },
+      "look": "",
+      "concept": "",
+      "inventory": "",
+      "note": ""
+    }
+  },
+  "Item": {
+    "types": ["item"],
+    "item": {
+      "description": ""
+    }
+  }
+}

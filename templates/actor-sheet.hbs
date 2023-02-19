@@ -1,0 +1,58 @@
+<form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+
+  {{!-- Sheet Header --}}
+  <header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+
+      <div class="resources">
+        <div class="resource">
+          <label for="system.virtue" class="resource-label">{{localize 'TENCANDLES.Virtue'}}: </label>
+          <input type="text" name="system.virtue.value" value="{{system.virtue.value}}" data-dtype="String"/>
+          <input type="checkbox" name="system.virtue.burn"  data-dtype="Boolean" title="{{localize 'TENCANDLES.Burned'}}" {{#if system.virtue.burn}} checked {{/if}}/>
+        </div>
+
+        <div class="resource">
+          <label for="system.vice" class="resource-label">{{localize 'TENCANDLES.Vice'}}: </label>
+          <input type="text" name="system.vice.value" value="{{system.vice.value}}" data-dtype="String"/>
+          <input type="checkbox" name="system.vice.burn" data-dtype="Boolean" title="{{localize 'TENCANDLES.Burned'}}"  {{#if system.vice.burn}} checked {{/if}}/>
+        </div>
+
+        <div class="resource">
+          <label for="system.moment" class="resource-label">{{localize 'TENCANDLES.Moment'}}: </label>
+          <input type="text" name="system.moment.value" value="{{system.moment.value}}" data-dtype="String" placeholder="{{localize 'TENCANDLES.MomentLabel'}}"/>
+          <input type="checkbox" name="system.moment.burn" data-dtype="Boolean" title="{{localize 'TENCANDLES.Burned'}}"  {{#if system.moment.burn}} checked {{/if}}/>
+        </div>
+
+        <div class="resource">
+          <label for="system.brink" class="resource-label">{{localize 'TENCANDLES.Brink'}}: </label>
+          <input type="text" name="system.brink.value" value="{{system.brink.value}}" data-dtype="String" placeholder="{{localize 'TENCANDLES.BrinkLabel'}}"/>
+          <input type="checkbox" name="system.brink.burn" data-dtype="Boolean" title="{{localize 'TENCANDLES.Burned'}}"  {{#if system.brink.burn}} checked {{/if}}/>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+    <div>
+      <h3>{{localize 'TENCANDLES.Look'}}</h3>
+      {{editor system.look target="system.look" rollData=rollData button=true owner=owner editable=editable}}
+    </div>
+    <div>
+      <h3>{{localize 'TENCANDLES.Concept'}}</h3>
+      {{editor system.concept target="system.concept" rollData=rollData button=true owner=owner editable=editable}}
+    </div>
+    <div>
+      <h3>{{localize 'TENCANDLES.Inventory'}}</h3>
+      {{editor system.inventory target="system.inventory" rollData=rollData button=true owner=owner editable=editable}}
+    </div>
+    <div>
+      <h3>{{localize 'TENCANDLES.Note'}}</h3>
+      {{editor system.note target="system.note" rollData=rollData button=true owner=owner editable=editable}}
+    </div>
+  </section>
+</form>
+

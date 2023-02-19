@@ -1,0 +1,90 @@
+.sheet-header {
+  flex: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+
+  img.profile-img {
+    flex: 200px;
+    height: 200px;
+    padding-right: 10px;
+    border: none;
+  }
+
+  .header-fields {
+    flex: 100;
+
+    h1.charname {
+      height: 50px;
+      padding: 0px;
+      margin: 5px 0;
+      border-bottom: 0;
+      font-weight: 700;
+      input {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+    }
+    .resource {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .resource-label {
+        flex: auto;
+        font-weight: bold;
+      }
+
+      input[type="text"] {
+        flex: 100;
+        border-width: 0;
+        border-bottom-width: 1px;
+        border-radius: 0;
+        background-image: none;
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+
+      input[type="checkbox"] {
+        flex: auto;
+      }
+
+      input:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.sheet-body {
+  display: grid;
+  height: calc(100% - 2px);
+  grid-column: span 2 / span 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 10px 0;
+  padding: 0;
+
+  .editor {
+    height: 175px;
+  }
+}
+
+.tox {
+  .tox-editor-container {
+    background: #fff;
+  }
+
+  .tox-edit-area {
+    padding: 0 8px;
+  }
+}

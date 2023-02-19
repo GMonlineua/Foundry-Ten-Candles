@@ -1,0 +1,41 @@
+<form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+
+  {{!-- Sheet Header --}}
+  <header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+
+      <div class="resources">
+        <div class="resource">
+          <label for="system.virtue" class="resource-label">{{localize 'TENCANDLES.Virtue'}}: </label>
+          <input type="text" name="system.virtue.value" value="{{system.virtue.value}}" data-dtype="String"/>
+        </div>
+
+        <div class="resource">
+          <label for="system.vice" class="resource-label">{{localize 'TENCANDLES.Vice'}}: </label>
+          <input type="text" name="system.vice.value" value="{{system.vice.value}}" data-dtype="String"/>
+        </div>
+
+        <div class="resource">
+          <label for="system.moment" class="resource-label">{{localize 'TENCANDLES.Moment'}}: </label>
+          <input type="text" name="system.moment.value" value="{{system.moment.value}}" data-dtype="String" placeholder="{{localize 'TENCANDLES.MomentLabel'}}"/>
+        </div>
+      </div>
+    </div>
+  </header>
+
+{{!-- Sheet Body --}}
+  <section class="sheet-body">
+    <div>
+      <h3>{{localize 'TENCANDLES.Look'}}</h3>
+      {{editor system.look target="system.look" rollData=rollData button=true owner=owner editable=editable}}
+    </div>
+    <div>
+      <h3>{{localize 'TENCANDLES.Concept'}}</h3>
+      {{editor system.concept target="system.concept" rollData=rollData button=true owner=owner editable=editable}}
+    </div>
+  </section>
+
+</form>

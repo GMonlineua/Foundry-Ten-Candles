@@ -1,0 +1,15 @@
+{
+  "ACTOR.TypeCharacter": "Персонаж",
+  "ITEM.TypeItem": "Предмет",
+  "TENCANDLES.Virtue": "Чеснота",
+  "TENCANDLES.Vice": "Вада",
+  "TENCANDLES.Moment": "Момент",
+  "TENCANDLES.MomentLabel": "Я знайду надію...",
+  "TENCANDLES.Brink": "Межа",
+  "TENCANDLES.BrinkLabel": "Я бачив тебе...",
+  "TENCANDLES.Burned": "Спалено",
+  "TENCANDLES.Look": "Зовнішній Вигляд",
+  "TENCANDLES.Concept": "Концепт",
+  "TENCANDLES.Inventory": "Інвентар",
+  "TENCANDLES.Note": "Замітки"
+}

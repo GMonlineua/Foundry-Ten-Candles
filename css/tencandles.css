@@ -1,0 +1,166 @@
+/* Styles limited to tencandles sheets */
+.tencandles .sheet-header {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.tencandles .sheet-header img.profile-img {
+  -webkit-box-flex: 200px;
+  -ms-flex: 200px;
+  flex: 200px;
+  height: 200px;
+  padding-right: 10px;
+  border: none;
+}
+.tencandles .sheet-header .header-fields {
+  -webkit-box-flex: 100;
+  -ms-flex: 100;
+  flex: 100;
+}
+.tencandles .sheet-header .header-fields h1.charname {
+  height: 50px;
+  padding: 0px;
+  margin: 5px 0;
+  border-bottom: 0;
+  font-weight: 700;
+}
+.tencandles .sheet-header .header-fields h1.charname input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.tencandles .sheet-header .header-fields .resource {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.tencandles .sheet-header .header-fields .resource .resource-label {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  font-weight: bold;
+}
+.tencandles .sheet-header .header-fields .resource input[type=text] {
+  -webkit-box-flex: 100;
+  -ms-flex: 100;
+  flex: 100;
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-radius: 0;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.tencandles .sheet-header .header-fields .resource input[type=checkbox] {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+}
+.tencandles .sheet-header .header-fields .resource input:focus {
+  outline: none;
+}
+.tencandles .sheet-body {
+  display: grid;
+  height: calc(100% - 2px);
+  grid-column: span 2/span 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 10px 0;
+  padding: 0;
+}
+.tencandles .sheet-body .editor {
+  height: 175px;
+}
+.tencandles .tox .tox-editor-container {
+  background: #fff;
+}
+.tencandles .tox .tox-edit-area {
+  padding: 0 8px;
+}
+.tencandles .item-header {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.tencandles .item-header img.item-img {
+  -webkit-box-flex: 100px;
+  -ms-flex: 100px;
+  flex: 100px;
+  height: 100px;
+  padding-right: 10px;
+  border: none;
+}
+.tencandles .item-header .header-fields {
+  -webkit-box-flex: 100;
+  -ms-flex: 100;
+  flex: 100;
+}
+.tencandles .item-header .header-fields h1.item-name {
+  height: 50px;
+  padding: 0px;
+  margin: 5px 0;
+  border-bottom: 0;
+  font-weight: 700;
+}
+.tencandles .item-header .header-fields h1.item-name input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.tencandles .item-body {
+  height: 290px;
+}
+.tencandles .item-body .editor {
+  height: 250px;
+}
+.tencandles .tox .tox-editor-container {
+  background: #fff;
+}
+.tencandles .tox .tox-edit-area {
+  padding: 0 8px;
+}
