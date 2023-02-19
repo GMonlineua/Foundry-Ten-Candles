@@ -4,7 +4,7 @@
 [![Version]][Version URL]
 [![MIT License]][MIT URL]
 
-Це зроблений для [Foundry Virtual Tabletop](http://foundryvtt.com) хак [Archeterica Lite](https://docs.google.com/document/d/1-4VIYHuXkobt6ocbJGgzoAevYeKurpDeU6JVS1Ld-xU/edit?usp=sharing) на українську настільно-рольову гру [Archeterica Imago](https://archeterica.com/uk). Архетерика – пригодницька настільно-рольова гра про таємні джентльменські товариства та зустріч із Неземним. Архетерика Лайт – хак, що зпрощує бій та інвентар персонажів, для більш наративного та швидкого бою.
+Description
 
 ## Встановлення
 Щоб встановити цю систему:
